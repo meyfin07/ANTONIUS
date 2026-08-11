@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Learning | Media Pembelajaran</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-orb orb1"></div><div class="bg-orb orb2"></div>
+
+  <header class="navbar">
+    <div class="brand">
+      <div class="brand-icon">M</div>
+      <div><b>MultiLearn</b><span>Media Pembelajaran</span></div>
+    </div>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav id="navMenu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#materi" class="nav-link">Materi</a>
+      <a href="#quiz" class="nav-link">Quiz</a>
+      <a href="#tugas" class="nav-link">Tugas</a>
+      <a href="#video" class="nav-link">Video</a>
+      <a href="#tentang" class="nav-link">Tentang</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page-section hero-section">
+      <div class="hero-content reveal">
+        <span class="badge">✨ INTERACTIVE MULTIMEDIA</span>
+        <h1>Belajar Multimedia<br><span>Jadi Lebih Seru.</span></h1>
+        <p>Pelajari konsep multimedia melalui teks, gambar, audio, video, animasi, dan kuis interaktif dalam satu website.</p>
+        <div class="hero-buttons">
+          <a href="#materi" class="btn primary">Mulai Belajar →</a>
+          <a href="#video" class="btn ghost">▶ Lihat Video</a>
+        </div>
+        <div class="music-player">
+          <button id="musicToggle" class="music-btn">▶</button>
+          <div><b>Musik Belajar</b><span>Instrumental • MultiLearn</span></div>
+          <audio id="bgMusic" loop preload="auto"><source src="assets/audio/musik_belajar.wav" type="audio/wav"></audio>
+        </div>
+        <div class="stats">
+          <div><b>6</b><span>Menu</span></div>
+          <div><b>5+</b><span>Materi</span></div>
+          <div><b>10</b><span>Quiz</span></div>
+          <div><b>100%</b><span>Interaktif</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="glass-card floating">
+          <div class="screen">
+            <div class="screen-top"><i></i><i></i><i></i></div>
+            <div class="screen-icon">🎨</div>
+            <h3>Multimedia</h3>
+            <p>Text • Image • Audio • Video • Animation</p>
+            <div class="progress"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="materi" class="page-section">
+      <div class="section-title reveal"><span>01 — MATERI</span><h2>Kenali Dunia Multimedia</h2><p>Pelajari dasar-dasar multimedia dengan cara yang sederhana.</p></div>
+      <div class="cards">
+        <article class="info-card reveal"><div class="card-icon">📝</div><h3>Teks</h3><p>Elemen dasar untuk menyampaikan informasi, judul, instruksi, dan penjelasan.</p></article>
+        <article class="info-card reveal"><div class="card-icon">🖼️</div><h3>Gambar</h3><p>Visual yang membantu pengguna memahami informasi secara lebih cepat dan menarik.</p></article>
+        <article class="info-card reveal"><div class="card-icon">🎵</div><h3>Audio</h3><p>Suara, musik, dan narasi yang dapat memperkuat pengalaman pengguna.</p></article>
+        <article class="info-card reveal"><div class="card-icon">🎬</div><h3>Video</h3><p>Gabungan visual bergerak dan audio untuk menyampaikan informasi secara dinamis.</p></article>
+        <article class="info-card reveal"><div class="card-icon">✨</div><h3>Animasi</h3><p>Gerakan visual yang membuat konsep lebih hidup dan membantu menarik perhatian.</p></article>
+        <article class="info-card reveal"><div class="card-icon">🎮</div><h3>Interaksi</h3><p>Interaksi pengguna seperti tombol, kuis, navigasi, dan feedback langsung.</p></article>
+      </div>
+<div class="media-gallery reveal">
+        <div class="gallery-card"><img src="assets/images/multimedia-hero.svg" alt="Ilustrasi multimedia interaktif"><h3>Multimedia Interaktif</h3><p>Gabungan berbagai media dalam satu pengalaman belajar.</p></div>
+        <div class="gallery-card"><img src="assets/images/teks-gambar.svg" alt="Ilustrasi teks dan gambar"><h3>Teks & Gambar</h3><p>Visual membantu informasi lebih mudah dipahami.</p></div>
+        <div class="gallery-card"><img src="assets/images/audio-visual.svg" alt="Ilustrasi audio video animasi"><h3>Audio & Visual</h3><p>Suara, video, dan animasi membuat pembelajaran lebih hidup.</p></div>
+      </div>
+      <div class="definition reveal">
+        <div class="definition-icon">💡</div>
+        <div><h3>Apa itu Multimedia?</h3><p>Multimedia adalah penggunaan beberapa bentuk media seperti teks, gambar, suara, video, dan animasi secara terpadu untuk menyampaikan informasi kepada pengguna.</p></div>
+      </div>
+    </section>
+
+    <section id="quiz" class="page-section">
+      <div class="section-title reveal"><span>02 — QUIZ</span><h2>Uji Pemahamanmu</h2><p>Pilih jawaban yang paling tepat. Nilai akan dihitung otomatis.</p></div>
+      <div class="quiz-box reveal">
+        <div id="quizContainer"></div>
+        <div class="quiz-actions">
+          <button class="btn primary" id="submitQuiz">Periksa Jawaban</button>
+          <button class="btn ghost" id="resetQuiz">Ulangi</button>
+        </div>
+        <div id="quizResult" class="result hidden"></div>
+      </div>
+    </section>
+
+    <section id="tugas" class="page-section">
+      <div class="section-title reveal"><span>03 — TUGAS</span><h2>Tugas Mandiri</h2><p>Tulis jawabanmu pada form berikut.</p></div>
+      <div class="task-box reveal">
+        <div class="task-item"><b>1.</b><p>Jelaskan pengertian multimedia menurut pemahamanmu sendiri.</p><textarea placeholder="Tulis jawaban..."></textarea></div>
+        <div class="task-item"><b>2.</b><p>Sebutkan minimal 5 unsur multimedia dan jelaskan fungsinya.</p><textarea placeholder="Tulis jawaban..."></textarea></div>
+        <div class="task-item"><b>3.</b><p>Mengapa video dapat menjadi media pembelajaran yang efektif?</p><textarea placeholder="Tulis jawaban..."></textarea></div>
+        <button class="btn primary" id="submitTask">✓ Kirim Tugas</button>
+        <div id="taskMessage" class="task-message hidden">✅ Tugas berhasil disimpan di halaman ini. Good job!</div>
+      </div>
+    </section>
+
+    <section id="video" class="page-section">
+      <div class="section-title reveal"><span>04 — VIDEO</span><h2>Belajar Lewat Video</h2><p>Gunakan video sebagai media visual dan audio untuk memperkuat pemahaman.</p></div>
+      <div class="video-layout reveal">
+        <div class="video-frame">
+          <video controls preload="metadata" poster="assets/video/poster.svg">
+            <source src="assets/video/dasar_multimedia.mp4" type="video/mp4">
+            Browser kamu tidak mendukung pemutar video HTML5.
+          </video>
+        </div>
+        <div class="video-info"><div class="audio-info"><b>🎵 Unsur Audio</b><span>Website ini menyediakan musik latar lokal. Tekan tombol ▶ di Home untuk memulai.</span></div>
+          <span class="badge">VIDEO PEMBELAJARAN</span>
+          <h3>Dasar-Dasar Multimedia</h3>
+          <p>Video pembelajaran lokal ini menjelaskan unsur-unsur multimedia secara singkat. Karena file video disimpan di website, video tetap dapat diputar saat website di-hosting tanpa bergantung pada YouTube.</p>
+          <div class="media-note">🎧 Gunakan headset untuk pengalaman audio yang lebih baik.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="page-section">
+      <div class="section-title reveal"><span>05 — TENTANG</span><h2>Tentang Website</h2><p>Informasi pembuat dan tujuan media pembelajaran.</p></div>
+      <div class="about-card reveal">
+        <div class="avatar">MF</div>
+        <div>
+          <span class="badge">CREATOR</span>
+          <h2>ANTONIUS LAIA</h2>
+          <p><b>NIM:</b> 146251088</p>
+          <p><b>Program Studi:</b> S1 Teknik Informatika</p>
+          <p>Website ini dibuat sebagai media pembelajaran multimedia yang menggabungkan informasi, visual, audio, video, animasi, dan interaksi pengguna.</p>
+          <div class="socials">
+            <a href="#" onclick="return false">Instagram</a>
+            <a href="#" onclick="return false">YouTube</a>
+            <a href="#" onclick="return false">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 MultiLearn • Interactive Multimedia Learning</p></footer>
+  <button id="topBtn" class="top-btn">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
