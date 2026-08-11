@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#241052"/><stop offset="1" stop-color="#123b83"/></linearGradient></defs>
+<rect width="1280" height="720" fill="url(#g)"/>
+<circle cx="1050" cy="80" r="220" fill="#7c3aed" opacity=".5"/><circle cx="90" cy="650" r="190" fill="#2563eb" opacity=".45"/>
+<text x="640" y="330" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="64" font-weight="700">DASAR-DASAR MULTIMEDIA</text>
+<text x="640" y="395" text-anchor="middle" fill="#dbeafe" font-family="Arial,sans-serif" font-size="30">Teks • Gambar • Audio • Video • Animasi • Interaksi</text>
+</svg>
